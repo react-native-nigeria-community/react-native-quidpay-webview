@@ -1,0 +1,27 @@
+{
+  "name": "react-native-quidpay-webview",
+  "version": "1.0.0",
+  "description": "💸💳The package allows you accept payment using quidpay and guess what , it doesn't require any form of linking, just install and begin to use .",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-native-nigeria/react-native-quidpay-webview.git"
+  },
+  "keywords": [
+    "quidpay",
+    "react-native",
+    "react",
+    "payment",
+    "payment",
+    "gateway"
+  ],
+  "author": "React Native Nigeria Community",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/react-native-nigeria/react-native-quidpay-webview/issues"
+  },
+  "homepage": "https://github.com/react-native-nigeria/react-native-quidpay-webview#readme"
+}
