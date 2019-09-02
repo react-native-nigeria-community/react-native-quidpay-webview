@@ -99,7 +99,7 @@ You can pull in react-native-rave-webview into app with the steps below;
 
 #### [](https://github.com/react-native-nigeria/react-native-rave-webview#1--import-rave-component)1. import Rave Component
 
-    import Quidpay from 'react-native-quidpay-webview';
+    import {Quidpay} from 'react-native-quidpay-webview';
 
  #### 2. Set your success, failure and close methods
 
