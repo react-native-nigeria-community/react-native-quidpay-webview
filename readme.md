@@ -82,11 +82,11 @@ You can pull in react-native-rave-webview into app with the steps below;
 
 -   Change directory into your current project directory from your terminal and enter this command:
     
-    > npm install react-native-quidpay-webview --save
+    `npm install react-native-quidpay-webview --save`
     
     ### [](https://github.com/react-native-nigeria/react-native-rave-webview#or)OR
     
-    > yarn add react-native-quidpay-webview
+    `yarn add react-native-quidpay-webview`
     
     > and that's it, you're all good to go!
 
@@ -105,14 +105,10 @@ You can pull in react-native-rave-webview into app with the steps below;
 
  
 
-    constructor(props) {
-        super(props);
-	        
-      }
-    
+      ```javascript
       onSuccess(data) {
         console.log("success", data);
-        // You can get the transaction reference from successful transaction charge response returned and handle your transaction verification here
+        // You can get the transaction reference from successful transaction charge response returned and handle your transaction `		verification here
     
       }
     
@@ -124,31 +120,32 @@ You can pull in react-native-rave-webview into app with the steps below;
         //an error occoured 
     
       }
+     ```
 #### 3. Use component (ensure to set currency for the desired payment method to display)
 
- 
-
-     render() {
-         return (
-            <View  style={styles.container}>
-			    <Quidpay
-				    buttonText=  "Pay Now"
-				    QuidpayKey="<your-api-key-here>"
-				    amount={20000}
-				    billingEmail="ayoshokz@gmail.com"
-				    billingMobile="08101****"
-				    billingName="Oluwatobi Shokunbi"
-				    ActivityIndicatorColor="green"
-				    onCancel={()=>this.onCancel()}
-				    onSuccess={(transactionRef)=>this.onSuccess(transactionRef)}
-				    btnStyles={{backgroundColor:'green', width:100, alignContent:  'center' }}
-				    textStyles={{ color:'white', alignSelf:  'center', }}
-				    onError={()=>{alert('something went wrong')}}
-				    txref="1234"
-				  />
-		    </View>
-	    );
-	   }
+ ```javasript
+   render() {
+    return (
+       <View  style={styles.container}>
+         <Quidpay
+           buttonText=  "Pay Now"
+           QuidpayKey="<your-api-key-here>"
+           amount={20000}
+           billingEmail="ayoshokz@gmail.com"
+       	   billingMobile="08101****"
+           billingName="Oluwatobi Shokunbi"
+           ActivityIndicatorColor="green"
+           onCancel={()=>this.onCancel()}
+           onSuccess={(transactionRef)=>this.onSuccess(transactionRef)}
+           btnStyles={{backgroundColor:'green', width:100, alignContent:  'center' }}
+           textStyles={{ color:'white', alignSelf:  'center', }}
+           onError={()=>{alert('something went wrong')}}
+           txref="1234"
+        />
+    </View>
+  );
+  }
+ ```
 
   
   
