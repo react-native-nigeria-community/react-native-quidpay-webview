@@ -29,7 +29,7 @@ Our release cycle is independent of  `react-native`. We follow semver and here i
 
 ### [](https://github.com/react-native-nigeria/react-native-quidpay-webview#prerequisites)Prerequisites
 
--   [Quidpay Public And Encryption Keys](https://rave.flutterwave.com/dashboard/settings/apis)
+-   [Quidpay Public And Encryption Keys](https://quidpay.io)
 
 -   [Node](https://nodejs.org/en/)
 -   [NPM](https://www.npmjs.com/get-npm)
@@ -37,7 +37,7 @@ Our release cycle is independent of  `react-native`. We follow semver and here i
 
 ## Installations
 
-> To use  react native rave webview in your application, you need to have  `Node`  and  `npm`  downloaded and installed on your machine.
+> To use  react native quidpay webview in your application, you need to have  `Node`  and  `npm`  downloaded and installed on your machine.
 
 -   [Click Here](https://nodejs.org/en/)  to download and install  `Node`  to your machine,  `npm`  is always automatically installed when you install  `Node`.
     
@@ -47,7 +47,7 @@ Our release cycle is independent of  `react-native`. We follow semver and here i
  
  ## Deployment
 
- To Implement Rave By QuidPay easily with React Native
+ To Implement QuidPay easily with React Native
 
 -   You can get your Public, Secret and your Encryption Keys on your account by clicking this link >>>[Quidpay Live](https://dashboard.quidpay.io/dashboard/settings/apis).
     
@@ -151,7 +151,7 @@ You can pull in react-native-rave-webview into app with the steps below;
 
   
 
-#### [](https://github.com/just1and0/object-to-array-convert#all-object-to-array-convert-props)all React-Native-rave-WebView API
+#### [](https://github.com/react-native-nigeria/react-native-quidpay-webview#API)all React-Native-Quidpay-WebView API
 
   
 
@@ -173,7 +173,7 @@ You can pull in react-native-rave-webview into app with the steps below;
 
   
 
-## [](https://github.com/just1and0/object-to-array-convert#contributions)Contributions
+## [](https://github.com/react-native-nigeria/react-native-quidpay-webview#contributions)Contributions
 
   
 
