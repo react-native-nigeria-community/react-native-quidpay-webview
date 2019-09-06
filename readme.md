@@ -130,7 +130,7 @@ You can pull in react-native-rave-webview into app with the steps below;
            QuidpayKey="<your-api-key-here>"
            amount={20000}
            billingEmail="ayoshokz@gmail.com"
-       	   billingMobile="08101****"
+       	  billingMobile="08101****"
            billingName="Oluwatobi Shokunbi"
            ActivityIndicatorColor="green"
            onCancel={()=>this.onCancel()}
