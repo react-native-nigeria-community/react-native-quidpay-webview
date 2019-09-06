@@ -29,7 +29,7 @@ Our release cycle is independent of  `react-native`. We follow semver and here i
 
 ### [](https://github.com/react-native-nigeria/react-native-quidpay-webview#prerequisites)Prerequisites
 
--   [Quidpay Public And Encryption Keys](https://rave.flutterwave.com/dashboard/settings/apis)
+-   [Quidpay Public And Encryption Keys](https://quidpay.io)
 
 -   [Node](https://nodejs.org/en/)
 -   [NPM](https://www.npmjs.com/get-npm)
@@ -37,7 +37,7 @@ Our release cycle is independent of  `react-native`. We follow semver and here i
 
 ## Installations
 
-> To use  react native rave webview in your application, you need to have  `Node`  and  `npm`  downloaded and installed on your machine.
+> To use  react native quidpay webview in your application, you need to have  `Node`  and  `npm`  downloaded and installed on your machine.
 
 -   [Click Here](https://nodejs.org/en/)  to download and install  `Node`  to your machine,  `npm`  is always automatically installed when you install  `Node`.
     
@@ -47,7 +47,7 @@ Our release cycle is independent of  `react-native`. We follow semver and here i
  
  ## Deployment
 
-> To Implement Rave By Flutterwave easily with React Native
+ To Implement QuidPay easily with React Native
 
 -   You can get your Public, Secret and your Encryption Keys on your account by clicking this link >>>[Quidpay Live](https://dashboard.quidpay.io/dashboard/settings/apis).
     
@@ -82,13 +82,13 @@ You can pull in react-native-rave-webview into app with the steps below;
 
 -   Change directory into your current project directory from your terminal and enter this command:
     
-    > npm install react-native-quidpay-webview --save
+    `npm install react-native-quidpay-webview --save`
     
     ### [](https://github.com/react-native-nigeria/react-native-rave-webview#or)OR
     
-    > yarn add react-native-quidpay-webview
+    `yarn add react-native-quidpay-webview`
     
-    > and that's it, you're all good to go!
+ and that's it, you're all good to go!
 
   
   `Note:`  To use  `Yarn`  on your machine  [Click Here](https://yarnpkg.com/en/docs/install)
@@ -103,16 +103,10 @@ You can pull in react-native-rave-webview into app with the steps below;
 
  #### 2. Set your success, failure and close methods
 
- 
-
-    constructor(props) {
-        super(props);
-	        
-      }
-    
+```javascript
       onSuccess(data) {
         console.log("success", data);
-        // You can get the transaction reference from successful transaction charge response returned and handle your transaction verification here
+        // You can get the transaction reference from successful transaction charge response returned and handle your transaction `		verification here
     
       }
     
@@ -124,31 +118,32 @@ You can pull in react-native-rave-webview into app with the steps below;
         //an error occoured 
     
       }
+ ``` 
 #### 3. Use component (ensure to set currency for the desired payment method to display)
 
- 
-
-     render() {
-         return (
-            <View  style={styles.container}>
-			    <Quidpay
-				    buttonText=  "Pay Now"
-				    QuidpayKey="<your-api-key-here>"
-				    amount={20000}
-				    billingEmail="ayoshokz@gmail.com"
-				    billingMobile="08101****"
-				    billingName="Oluwatobi Shokunbi"
-				    ActivityIndicatorColor="green"
-				    onCancel={()=>this.onCancel()}
-				    onSuccess={(transactionRef)=>this.onSuccess(transactionRef)}
-				    btnStyles={{backgroundColor:'green', width:100, alignContent:  'center' }}
-				    textStyles={{ color:'white', alignSelf:  'center', }}
-				    onError={()=>{alert('something went wrong')}}
-				    txref="1234"
-				  />
-		    </View>
-	    );
-	   }
+ ```javascript
+   render() {
+    return (
+       <View  style={styles.container}>
+         <Quidpay
+           buttonText=  "Pay Now"
+           QuidpayKey="<your-api-key-here>"
+           amount={20000}
+           billingEmail="ayoshokz@gmail.com"
+       	  billingMobile="08101****"
+           billingName="Oluwatobi Shokunbi"
+           ActivityIndicatorColor="green"
+           onCancel={()=>this.onCancel()}
+           onSuccess={(transactionRef)=>this.onSuccess(transactionRef)}
+           btnStyles={{backgroundColor:'green', width:100, alignContent:  'center' }}
+           textStyles={{ color:'white', alignSelf:  'center', }}
+           onError={()=>{alert('something went wrong')}}
+           txref="1234"
+        />
+    </View>
+  );
+  }
+ ```
 
   
   
@@ -156,7 +151,7 @@ You can pull in react-native-rave-webview into app with the steps below;
 
   
 
-#### [](https://github.com/just1and0/object-to-array-convert#all-object-to-array-convert-props)all React-Native-rave-WebView API
+#### [](https://github.com/react-native-nigeria/react-native-quidpay-webview#API)all React-Native-Quidpay-WebView API
 
   
 
@@ -178,7 +173,7 @@ You can pull in react-native-rave-webview into app with the steps below;
 
   
 
-## [](https://github.com/just1and0/object-to-array-convert#contributions)Contributions
+## [](https://github.com/react-native-nigeria/react-native-quidpay-webview#contributions)Contributions
 
   
 
