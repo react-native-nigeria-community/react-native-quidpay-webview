@@ -47,7 +47,7 @@ Our release cycle is independent of  `react-native`. We follow semver and here i
  
  ## Deployment
 
-> To Implement Rave By Flutterwave easily with React Native
+ To Implement Rave By QuidPay easily with React Native
 
 -   You can get your Public, Secret and your Encryption Keys on your account by clicking this link >>>[Quidpay Live](https://dashboard.quidpay.io/dashboard/settings/apis).
     
@@ -88,7 +88,7 @@ You can pull in react-native-rave-webview into app with the steps below;
     
     `yarn add react-native-quidpay-webview`
     
-    > and that's it, you're all good to go!
+ and that's it, you're all good to go!
 
   
   `Note:`  To use  `Yarn`  on your machine  [Click Here](https://yarnpkg.com/en/docs/install)
@@ -103,9 +103,7 @@ You can pull in react-native-rave-webview into app with the steps below;
 
  #### 2. Set your success, failure and close methods
 
- 
-
-      ```javascript
+```javascript
       onSuccess(data) {
         console.log("success", data);
         // You can get the transaction reference from successful transaction charge response returned and handle your transaction `		verification here
@@ -120,10 +118,10 @@ You can pull in react-native-rave-webview into app with the steps below;
         //an error occoured 
     
       }
-     ```
+ ``` 
 #### 3. Use component (ensure to set currency for the desired payment method to display)
 
- ```javasript
+ ```javascript
    render() {
     return (
        <View  style={styles.container}>
